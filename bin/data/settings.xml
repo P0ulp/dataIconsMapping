@@ -1,7 +1,8 @@
 <group>
-	<projectorTilt>0.5</projectorTilt>
-	<projectorPosition>0, 0, 1849.23</projectorPosition>
+	<projectorTilt_H>-0.200001</projectorTilt_H>
+	<projectorTilt_V>-0.800003</projectorTilt_V>
+	<projectorPosition>275.51, 285.714, 826.531</projectorPosition>
+	<BackGround_Adjust>14.535</BackGround_Adjust>
+	<BackGround_Icon_Adjust>70.125</BackGround_Icon_Adjust>
 <group/>
-<BackGround_Adjust>40.8</BackGround_Adjust>
-	<BackGround_Icon_Adjust>93.075</BackGround_Icon_Adjust>
 </group>

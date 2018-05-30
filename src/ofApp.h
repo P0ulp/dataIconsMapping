@@ -8,8 +8,6 @@
 
 #define NUM_ICON 3
 
-#define PIXEL_MM 3
-
 class ofApp : public ofBaseApp {
     
 public:
@@ -20,24 +18,21 @@ public:
     void exit();
 
     void keyPressed(int key);
+    void mousePressed(int x, int y, int button);
+    void mouseReleased(int x, int y, int button);
 
 private:
-    void projectorPositionChanged(ofVec3f& projectorPosition);
-    void projectorTiltChanged(float& projectorTilt);
 
     ofxQuadWarp warpers[NUM_ICON];
     string warpersPaths[NUM_ICON] = {"quadwarpA.xml","quadwarpB.xml","quadwarpC.xml"};
     
     ofImage imgs[NUM_ICON];
-     string imgsPaths[NUM_ICON] = {"mappingA.png","mappingB.png","mappingC.png"};
+    ofPoint initPoints[NUM_ICON][4];
+    string imgsPaths[NUM_ICON] = {"mappingA.png","mappingB.png","mappingC.png"};
     ofFbo fbo;
-    
-    ofCamera projector;
     
     // user interface
     ofxPanel gui;
-    ofParameter<ofVec3f> projectorPosition;
-    ofParameter<float> projectorTilt;
     ofParameter<float> bgColor;
     ofParameter<float> bgIconColor;
     
